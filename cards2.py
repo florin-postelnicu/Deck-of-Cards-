@@ -86,27 +86,20 @@ class Card:
 # Put the definitions of functions
 def print_nice(card1, card2):
     if Card.__cmp__(card1, card2) == 1:
-        return 'Card {0} is higher than Card {1}'.format(card1, card2)
+        return print('Card {0} is higher than Card {1}'.format(card1, card2))
     if Card.__cmp__(card1, card2) == -1:
-        return 'Card {0} is lower than Card {1}'.format(card1, card2)
+        return print('Card {0} is lower than Card {1}'.format(card1, card2))
     if Card.__cmp__(card1, card2) == 0:
-        return 'Card {0} is identical to  Card {1}'.format(card1, card2)
+        return print('Card {0} is identical to  Card {1}'.format(card1, card2))
 
 
 
 
 def main():
-    print(Card(0,1))
-    # Printing all the cards in the deck
-    for suit in range(4):
-        for rank in range(1,14):
-            print('{0} of {1}'.format(Card.rank_names[rank], Card.suit_names[suit]))
-
-    print(Card.__cmp__(Card(0,1), Card(0,7)))
     
-    print(print_nice(Card(0,1), Card(0,7)))
-    print(print_nice(Card(2,13), Card(0,1)))
-    print(print_nice(Card(0,1), Card(0,1)))
+    print_nice(Card(0,1), Card(0,7))
+    print_nice(Card(2,13), Card(0,1))
+    print_nice(Card(0,1), Card(0,1))
 
 
 
