@@ -57,7 +57,6 @@ the given cards.
 
 
 
-
 class Card:
     suit_names = ['Clubs', 'Diamonds', 'Hearts', 'Spades']
     rank_names = [None, 'Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King']
@@ -84,6 +83,14 @@ class Card:
         # otherwise, the cards are equal(identical)
         return 0
 
+# Put the definitions of functions
+def print_nice(card1, card2):
+    if Card.__cmp__(card1, card2) == 1:
+        return 'Card {0} is higher than Card {1}'.format(card1, card2)
+    if Card.__cmp__(card1, card2) == -1:
+        return 'Card {0} is lower than Card {1}'.format(card1, card2)
+    if Card.__cmp__(card1, card2) == 0:
+        return 'Card {0} is identical to  Card {1}'.format(card1, card2)
 
 
 
@@ -96,6 +103,10 @@ def main():
             print('{0} of {1}'.format(Card.rank_names[rank], Card.suit_names[suit]))
 
     print(Card.__cmp__(Card(0,1), Card(0,7)))
+    
+    print(print_nice(Card(0,1), Card(0,7)))
+    print(print_nice(Card(2,13), Card(0,1)))
+    print(print_nice(Card(0,1), Card(0,1)))
 
 
 
