@@ -6,14 +6,21 @@ Copyright 2012 Allen B. Downey
 License: GNU GPLv3 http://www.gnu.org/licenses/gpl.html
 
 
-
-
 Building a Deck
 
 Now that we have Cards, the next step is to define Decks. Since a deck is made up of cards,
 it is natural for each Deck to contain a list of cards as an attribute.
 The following is a class definition for Deck. The init method creates the attribute cards and
 generates the standard set of fifty-two cards.
+
+Alternative definition for res:
+ def __str__(self):
+        res = [str(card) for card in self.cards]
+        return '\n'.join(res)
+This method demonstrates an efficient way to accumulate a large string: 
+building a list of strings and then using join. 
+The built-in function str invokes the __str__ method on each card and returns the string representation.
+Since we invoke join on a newline character, the cards are separated by newlines. 
 '''
 
 class Card(object):
