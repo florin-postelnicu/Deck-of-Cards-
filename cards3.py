@@ -1,4 +1,13 @@
 '''
+This module contains code from
+Think Python by Allen B. Downey
+http://thinkpython.com
+Copyright 2012 Allen B. Downey
+License: GNU GPLv3 http://www.gnu.org/licenses/gpl.html
+
+
+
+
 Building a Deck
 
 Now that we have Cards, the next step is to define Decks. Since a deck is made up of cards,
