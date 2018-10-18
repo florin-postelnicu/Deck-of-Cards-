@@ -1,4 +1,10 @@
 """
+This module contains code from
+Think Python by Allen B. Downey
+http://thinkpython.com
+Copyright 2012 Allen B. Downey
+License: GNU GPLv3 http://www.gnu.org/licenses/gpl.html
+
 More methods for the deck class
 Three new methods added to the Deck class.
 The VENEER methods are based on the methods for lists:
