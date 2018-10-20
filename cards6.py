@@ -137,11 +137,30 @@ class Hand(Deck):
 
 
 def main():
-    deck = Deck()
+     deck = Deck()
     deck.shuffle()
-    hand1 = Hand('Mario')
+    hand1 = Hand('North')
+
     deck.move_cards(hand1, 13)
-    print(hand1)
+    print()
+    hand1.sort()
+    print(hand1.name,'\n\n', hand1)
+    hand2 = Hand('South')
+    deck.move_cards(hand2, 13)
+    print()
+    hand2.sort()
+    print(hand2.name,'\n\n',hand2)
+    hand3 = Hand('East')
+    deck.move_cards(hand3, 13)
+    print()
+    hand3.sort()
+    print(hand3.name , '\n\n',hand3)
+    hand4 = Hand('West')
+    deck.move_cards(hand4, 13)
+    print()
+    hand4.sort()
+    print(hand4.name, '\n\n', hand4)
+
 
 
 
