@@ -50,7 +50,9 @@ cards4.py : Adding more VENEER methods( based on predefined functions fro lists)
            The language feature most often associated with object-oriented programming is inheritance.
            Inheritance is the ability to define a new class that is a modified version of an existing class.
 
-           The primary advantage of this feature is that you can add new methods to a class without modifying the existing              class.It is called inheritance because the new class inherits all of the methods of the existing class.
+           The primary advantage of this feature is that you can add new methods to a class without 
+           modifying the existing class.It is called inheritance because the new class inherits all of the methods
+           of the  existing class.
            Extending this metaphor, the existing class is sometimes called the parent class.
            The new class may be called the child class or sometimes subclass.
 
