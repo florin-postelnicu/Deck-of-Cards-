@@ -95,11 +95,11 @@ class Deck(object):
                     self.cards[index + 1] = self.cards[index]
                     self.cards[index] = change
                     switch = 1
-                if switch == 1:
-                    running = True
-                else:
+            if switch == 1:
+                running = True
+            else:
 
-                    return self.cards
+                return self.cards
 
 
 def main():
