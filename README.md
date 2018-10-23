@@ -73,7 +73,7 @@ cards4.py : Adding more VENEER methods( based on predefined functions fro lists)
  
            
  
-reviewlists.py : A review of the methods of class list. Some of these methods are used aas VENEER methdos for Deck()
+reviewlists.py : A review of the methods in class list. Some of these methods are used as VENEER methdos for Deck()
               
               Method	Description
               append()	Adds an element at the end of the list
