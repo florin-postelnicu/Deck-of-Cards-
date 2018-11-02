@@ -23,9 +23,6 @@ class FoolHand(Hand):
                     self.cards.remove(exam)
                     print("Hand {}: {} matches {}".format(self.name, card, match))
                     count+= 1
-                else:
-                    pass
-
         return print(count)
 
 def main():
