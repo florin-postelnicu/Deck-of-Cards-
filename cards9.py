@@ -14,16 +14,28 @@ class FoolHand(Hand):
         count = 0
         original_card = self.cards[:]
         for card in original_card:
-            match = Card(3-card.suit,card.rank)
-            if match in self.cards:
-                self.cards.remove(card)
-                self.cards.remove(match)
-                print("Hand {}: {} matches {}".format(self.name, card, match))
-                count = count+1
-def main():
-    deck = Deck()
-    print(deck)
+            match = Card(3- card.suit,card.rank)
 
+            for exam in self.cards:
+                if Card.__cmp__(exam, match)== 0:
+                    # print(count, " exam is :", exam, " Match is :", match)
+                    self.cards.remove(card)
+                    self.cards.remove(exam)
+                    print("Hand {}: {} matches {}".format(self.name, card, match))
+                    count+= 1
+                else:
+                    pass
+
+        return print(count)
+
+def main():
+    game = CardGame()
+    hand = FoolHand("Dario")
+    game.deck.deal([hand], 26)
+    print(hand)
+    hand.remove_matches()
+    print(hand)
+    
 
 if __name__=='__main__':
     main()
