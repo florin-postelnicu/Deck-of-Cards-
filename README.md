@@ -88,3 +88,24 @@ reviewlists.py : A review of the methods in class list. Some of these methods ar
               reverse()	Reverses the order of the list
               sort()	Sorts the list
            
+cards8.py  : class Deck() is completeed with new methods, among them :
+
+
+                             def deal( self, hands, per_hand=999) The value of per_hand is chosen to be able to deal cards until
+                             the deck is empty
+                             def give(self, card, hand)  With the clear scope of passing oa card from a han to onather
+             
+             
+             class Hand(Deck) : As a simple application to inheritance, Hand clas is a child of Deck class.
+                               class Hand has only two methods:
+                               __init__(self, name=" ")  Th assign each player(hand) a name
+                               
+                               __str__(self)   For a nice way of writing the hand, having its name included
+                               
+                               
+cards9.py  : class CardGame : It has only one methos __init__(self) that will initialuze the Deck(0 , and shuffle it.
+
+             class FoolHand : It has only remove_matches() method. The objective is to remove the cards having the same color( both red,                              or both black) and the same rank.
+             
+             
+             
