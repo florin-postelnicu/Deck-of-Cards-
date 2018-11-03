@@ -103,9 +103,9 @@ cards8.py  : class Deck() is completeed with new methods, among them :
                                __str__(self)   For a nice way of writing the hand, having its name included
                                
                                
-cards9.py  : class CardGame : It has only one method __init__(self) that will initialuze the Deck(0 , and shuffle it.
+cards9.py  : class CardGame : It has only one method __init__(self) that will initialuze the Deck(), and shuffle it.
 
-             class FoolHand : It has only remove_matches() method. The objective is to remove the cards having the same color( both red,                              or both black) and the same rank.
+             class FoolHand : It has only remove_matches() method. The objective is to remove the cards having the same                                   color( both red,or both black) and the same rank.
              
              
              
