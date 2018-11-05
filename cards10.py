@@ -45,6 +45,7 @@ class FoolGame(CardGame):
         self.hands[i].add_card(pickedCard)
         print("Hand", self.hands[i], " picked ", pickedCard)
         count = self.hands[i].remove_matches()
+        self.hands[i].shuffle()
         return count
 
     def find_neighbor(self, i):
