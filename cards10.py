@@ -12,13 +12,13 @@ class FoolGame(CardGame):
             self.hands.append(FoolHand(name))
 
         # deal the cards
-        self.deck.deal(self.hands)
+        self.deck.deal(self.hands, 52//len(self.hands)+1)
         print("_______________Cards have been dealt")
         self.printHands()
 
         # remove initial matches
         matches = self.removeAllMatches()
-        print("________________Matches have been removed, play begins")
+        print("________________Matches have been removed, play begins\n")
         self.printHands()
 
         # Play until all cards are removed
