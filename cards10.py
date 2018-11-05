@@ -4,7 +4,7 @@ class FoolGame(CardGame):
     def play(self, names):
         # Remove a card, Ace of Spades
         # The Fool is the Ace of clubs
-        self.deck.remove_card(Card(0, 1))
+#         self.deck.remove_card(Card(0, 1))
 
         # make a hand for each player
         self.hands = []
