@@ -108,4 +108,10 @@ cards9.py  : class CardGame : It has only one method __init__(self) that will in
              class FoolHand : It has only remove_matches() method. The objective is to remove the cards having the same                                   color( both red,or both black) and the same rank.
              
              
+cards10.py : An attempt to create a class GoolGame(CradGame) to control a full game, for some players.
+             There is still some work to be done.
              
+             
+             
+             
+cards11.py : A two player game , between computer and a human player. This game is created by TAHAKHALDI (github)
